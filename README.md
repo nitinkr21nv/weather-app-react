@@ -1,16 +1,134 @@
-# React + Vite
+# 🌦️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather application built with **React.js** that provides real-time weather information using the **OpenWeather API**. Users can search for any city worldwide and view current weather details such as temperature, humidity, weather condition, minimum & maximum temperature, and feels-like temperature.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+🔗 **Live Demo:** https://weather-app-react-eta-vert.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Search weather by city name
+- 🌡️ View real-time temperature
+- 💧 Display humidity
+- 📈 Display minimum & maximum temperature
+- 🤗 Display "Feels Like" temperature
+- ☁️ Show current weather description
+- ❌ Error handling for invalid city names
+- ⚡ Fast API integration
+- 📱 Responsive user interface
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### API
+- OpenWeather API
+
+### Tools
+- Vite
+- Git
+- GitHub
+- Vercel
+
+---
+
+# 📂 Folder Structure
+
+```text
+weather-app-react/
+│── public/
+│── src/
+│   ├── assets/
+│   ├── SearchBox.jsx
+│   ├── InfoBox.jsx
+│   ├── WeatherApp.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│── screenshots/
+│── package.json
+│── vite.config.js
+│── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/your-username/weather-app-react.git
+```
+
+## Navigate to Project
+
+```bash
+cd weather-app-react
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+# 🔑 Environment Variables
+
+Create a `.env` file in the root directory.
+
+```env
+VITE_WEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
+```
+
+Access the API key inside your project using:
+
+```javascript
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
+---
+
+# 🌐 API Used
+
+This project uses the **OpenWeather API** to fetch live weather information.
+
+Website:
+
+https://openweathermap.org/api
+
+---
+
+# 💻 How It Works
+
+1. User enters the city name.
+2. React sends a request to the OpenWeather API.
+3. API returns weather information in JSON format.
+4. React updates the UI dynamically.
+5. Invalid city names display an error message.
+
+---
+
+# 👨‍💻 Author
+
+**Nitin Kumar**
+
+---
+
